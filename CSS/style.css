@@ -1,0 +1,100 @@
+#main{
+    background-color: aquamarine;
+    height: 610px;
+    width:100%;
+    display:grid;
+    grid-template-areas:
+    'header'
+    'board'
+    'footer';
+  grid-gap: 10px;
+}
+header{
+    color: white;
+    font-size: large;
+    font-family: fantasy;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: wavy;
+    padding: 0.5%;
+    width: 90%;
+    margin-left:3.8%;
+    background-color:black ;
+}
+h1:hover, h4:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.rock {grid-area: rock;}
+.paper {grid-area:paper;}
+.scissor{grid-area:scissor;}
+.chosen{grid-area:chosen;}
+.result{grid-area:result;}
+.score{grid-area:score;}
+#board{
+    display: grid;
+    grid-template-areas:
+    'rock paper scissor'
+    'chosen chosen chosen'
+    'result result score';
+    background-color:teal;
+    color:white;
+    height: 340px;
+    width:440px;
+    margin-left: 35%;
+    padding:1.5%;
+}
+footer{
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: wavy;
+    padding: 0.5%;
+    background-color:black ;
+    width:90%;
+    margin-left:3.8%;
+}
+.rock,.paper,.scissor{
+    margin-left:12%;
+    padding: 2%;
+}
+#rockButton{
+    background-color: red;
+    color: white;
+    height: 60px;
+    width: 100px;
+}
+#paperButton{
+    background-color: white;
+    color: black;
+    height: 60px;
+    width: 100px;
+}
+#scissorButton{
+    background-color: green;
+    color: white;
+    height: 60px;
+    width: 100px;
+}
+.chosen{
+    width: 100%;
+    color:black;
+    font-style: inherit;
+    font-family: fantasy;
+    font-size: small;
+    text-align: center;
+    font-weight: 200;
+    padding:0.5%;
+    margin-top: 4%;
+}
+.result{
+    width:100%;
+    font-size: large;
+    font-family: fantasy;
+    text-align: center;
+    padding:2%;
+}
